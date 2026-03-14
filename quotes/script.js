@@ -1,6 +1,6 @@
 async function fetchData() {
     try {
-        const response = await fetch('https://quotes-api-self.vercel.app/quote');
+        const response = await fetch('http://api.quotable.io/random');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -17,7 +17,7 @@ async function displayQuote() {
     const quoteEl = document.getElementById('quote');
     const authorEl = document.getElementById('author');
 
-    quoteEl.textContent = `"${rawjson.quote}"`;
+    quoteEl.textContent = `"${rawjson.content}"`;
     authorEl.textContent = `- ${rawjson.author}`;
 
     updateBottomRowPosition();
