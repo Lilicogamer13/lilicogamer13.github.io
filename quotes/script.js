@@ -1,6 +1,6 @@
 async function fetchData() {
     try {
-        const response = await fetch('http://api.quotable.io/random');
+        const response = await fetch('https://api.quotable.io/random');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
