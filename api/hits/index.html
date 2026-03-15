@@ -12,9 +12,10 @@
         // Fetch the hits count from the API and update the page
         async function updateHits() {
             try {
+                const debugjoins = await fetch('') // will be added when the file is added to the repository
                 const response = await fetch('https://proxy.corsfix.com/?url='+'https://hits.sh/api/urns/lilicogamer13.github.io');
                 const data = await response.json();
-                document.getElementById('hits').textContent = `joins: ${data.total-22}`;
+                document.getElementById('hits').textContent = `joins: ${data.total-debugjoins}`;
                 console.error('JSON:', data);
             } catch (error) {
                 console.error('Error fetching hits:', error);
