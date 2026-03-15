@@ -35,14 +35,21 @@
           justify-content: center; /* Centers horizontally */
           align-items: center;    /* Centers vertically */
         }
-
+        .invisible-iframe {
+          border: none;
+          width: 0;
+          height: 0;
+        }
     </style>
 </head>
 <body>
-    <custom1><h3><a href="/quotes">Get Motivation!</a></h3></custom1>
+    <iframe class="invisible-iframe" src="https://hits.sh/lilicogamer13.github.io.svg?label=joins&color=555555&labelColor=000000" frameborder="0"></iframe>
     <div class="view-counter-container">
-        <a href="https://hits.sh/lilicogamer13.github.io/"><img alt="Hits" src="https://hits.sh/lilicogamer13.github.io.svg?label=joins&color=555555&labelColor=000000"/></a>
+       <!-- Moved the default one -->
+       <!-- <a href="https://hits.sh/lilicogamer13.github.io/"><img alt="Hits" src="https://hits.sh/lilicogamer13.github.io.svg?label=joins&color=555555&labelColor=000000"/></a> -->
+        <iframe src="/api/hits" style="height: 120px; width: 100px; border: none;"></iframe>
     </div>
+    <custom1><h3><a href="/quotes">Get Motivation!</a></h3></custom1>
     <custom1><p>Check out my GitHub profile: <a href="https://github.com/lilicogamer13">Lio</a></p></custom1>
     <custom2><h2>About Me</h2></custom2>
     <custom1><p>Random guy from Earth, I do coding for fun nothing serious.</p></custom1>
