@@ -1,7 +1,7 @@
 let selectedTag = "All";
 
 async function fetchQuotes() {
-  const url = "https://proxy.corsfix.com/?https://github.com/quotable-io/data/raw/refs/heads/master/data/quotes.json";
+  const url = "https://corsproxy.io/?url=https://github.com/quotable-io/data/raw/refs/heads/master/data/quotes.json";
   const res = await fetch(url);
   return await res.json();
 }
